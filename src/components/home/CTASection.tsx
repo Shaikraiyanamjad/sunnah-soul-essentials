@@ -14,11 +14,20 @@ const CTASection = () => {
             Experience the Purity of Sunnah
           </h2>
           <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
-            Discover products that honor tradition while nurturing your 
+            Discover products that honor tradition while nurturing your
             wellbeing. Pure, authentic, and crafted with care.
           </p>
-          <Button variant="hero" size="xl" asChild className="group">
-            <Link to="/shop">
+          <Button
+            variant="hero"
+            asChild
+            className="
+    group
+    px-4 py-2 text-sm
+    md:px-6 md:py-3 md:text-lg
+    xl:px-8 xl:py-4 xl:text-xl
+  "
+          >
+            <Link to="/shop" className="flex items-center">
               Start Your Sunnah Journey
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>

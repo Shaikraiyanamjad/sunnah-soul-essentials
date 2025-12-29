@@ -11,7 +11,7 @@ const HeroSection = () => {
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <div className="animate-fade-up opacity-0" style={{ animationDelay: "100ms", animationFillMode: "forwards" }}>
               <span className="inline-block text-accent text-sm font-medium tracking-widest uppercase mb-4">
-                Natural Wellness
+                The Kashmir Vault
               </span>
             </div>
             

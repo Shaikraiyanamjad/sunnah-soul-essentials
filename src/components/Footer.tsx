@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Instagram, Mail, Phone } from "lucide-react";
-import logoIcon from "@/assets/logo-icon.png";
 
 const Footer = () => {
   return (
@@ -10,10 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <img src={logoIcon} alt="Sunnah & Soul" className="h-12 w-auto" />
-              <span className="font-heading text-xl font-semibold text-primary">
-                Sunnah & Soul
-              </span>
+              <img src="/logo.png" alt="Sunnah & Soul" className="h-[160px] w-auto" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mb-4">
               Inspired by Sunnah, Crafted for You. We bring you pure, authentic 
@@ -62,7 +58,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/9086677554"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors"
@@ -73,13 +69,13 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/sunnah.soul.tkv/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors"
                 >
                   <Instagram size={16} />
-                  @sunnahandsoul
+                  @sunnah.soul.tkv
                 </a>
               </li>
             </ul>

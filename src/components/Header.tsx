@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoIcon from "@/assets/logo-icon.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -20,18 +19,10 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container-custom">
-        <nav className="flex items-center justify-between h-20">
+        <nav className="flex items-center justify-between h-50">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover-lift">
-            <img src={logoIcon} alt="Sunnah & Soul" className="h-14 w-auto" />
-            <div className="hidden sm:block">
-              <span className="font-heading text-xl font-semibold text-primary">
-                Sunnah & Soul
-              </span>
-              <p className="text-xs text-muted-foreground tracking-wide">
-                Inspired by Sunnah, Crafted for You
-              </p>
-            </div>
+            <img src="/logo.png" alt="Sunnah & Soul" className="h-[160px] w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

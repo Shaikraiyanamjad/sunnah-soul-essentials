@@ -74,7 +74,7 @@ const Contact = () => {
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           required
                           className="bg-card"
-                          placeholder="John Doe"
+                          placeholder="your name"
                         />
                       </div>
                       <div>
@@ -87,7 +87,7 @@ const Contact = () => {
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           required
                           className="bg-card"
-                          placeholder="john@example.com"
+                          placeholder="your@example.com"
                         />
                       </div>
                     </div>
@@ -142,7 +142,7 @@ const Contact = () => {
                     </a>
 
                     <a
-                      href="https://wa.me/1234567890"
+                      href="https://wa.me/9086677554"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-accent transition-colors"
@@ -157,7 +157,7 @@ const Contact = () => {
                     </a>
 
                     <a
-                      href="tel:+1234567890"
+                      href="tel:+9086677554"
                       className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-accent transition-colors"
                     >
                       <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
@@ -165,7 +165,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="font-medium text-foreground">Call Us</p>
-                        <p className="text-muted-foreground text-sm">+1 (234) 567-890</p>
+                        <p className="text-muted-foreground text-sm">+91 9086677554</p>
                       </div>
                     </a>
 
