@@ -1,13 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/home/HeroSection";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import WhyUs from "@/components/home/WhyUs";
+import SunnahConnection from "@/components/home/SunnahConnection";
+import CTASection from "@/components/home/CTASection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>Sunnah & Soul | Pure Sunnah Products, Naturally Crafted</title>
+        <meta 
+          name="description" 
+          content="Discover authentic, ethically sourced wellness products inspired by prophetic traditions. Premium Sidr honey, Kashmiri saffron, Shilajit, and more." 
+        />
+        <meta name="keywords" content="Sunnah products, natural wellness, Sidr honey, Kashmiri saffron, Shilajit, Islamic wellness, authentic honey, natural remedies" />
+        <link rel="canonical" href="https://sunnahandsoul.com" />
+      </Helmet>
+
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1">
+          <HeroSection />
+          <FeaturedProducts />
+          <WhyUs />
+          <SunnahConnection />
+          <CTASection />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
